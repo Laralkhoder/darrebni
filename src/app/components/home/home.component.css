@@ -1,0 +1,184 @@
+
+
+.first-row{
+  width: 90%;
+  margin: auto;
+}
+
+
+
+
+button{
+  background-color: #6f2877 ;
+  color: white;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+gap: 50px;
+}
+
+
+
+
+
+
+
+
+.conten {
+  /* 
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  column-gap: ;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center; */
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.specialize {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-left p {
+  text-align: center;
+}
+
+img {
+  min-width: 80px;
+  margin: 35px;
+
+}
+
+img:nth-child(5) {
+  margin-left: 100px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  margin-top: 40px;
+  visibility: hidden;
+}
+.buttons.show{
+  visibility: visible;
+}
+button {
+  width: 100px;
+  height: 50px;
+  color: white;
+
+
+}
+
+.btn1 {
+  background-color: #6f2877;
+}
+
+.btn2 {
+  background-color: #20C4F4;
+}
+
+@media (max-width:992px) {
+  .btn1{
+    margin-left: 30px;
+  }
+}
+
+.phone {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 0 auto;
+  background-color: #ebe8ee;
+  height: 150px;
+  position: relative;
+  margin: 200px 0;
+  gap: 150px;
+}
+
+.div-left {
+  width: 35%;
+  margin-top: 50px;
+  position: absolute;
+  left: 120px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #818080;
+}
+@media (max-width:767px) {
+  .div-left{
+    left: 0;
+    margin-left: 30px;
+  }
+}
+
+.image-div img {
+  width: 80px;
+  margin: 0;
+}
+
+.image-div {
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-right {
+  position: absolute;
+  right: 0;
+  width: 35%;
+}
+
+
+.img-right img {
+  width: 350px;
+  height: 350px;
+  margin-left: 100px;
+}
+
+@media (max-width:767px) {
+  .img-right img{
+    margin: 0px;
+  }
+}
+.btn:hover{
+color: white;
+}
+.main-btn:hover{
+  background-color: #6f2877;
+}
+h1{
+  font-size: 31px;
+  font-weight: 400;
+}
+p{
+  font-size: 14px;
+}
+.selected{
+  position: relative;
+  font-weight: 500;
+}
+.selected::after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%);
+  width:70%;
+  height: 3px;
+  background-color: #6f2877;
+}

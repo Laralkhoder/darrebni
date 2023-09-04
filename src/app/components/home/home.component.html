@@ -1,0 +1,61 @@
+<app-nav></app-nav>
+<div class="container">
+  <div class="row first-row mt-5 mb-5  align-items-center gx-5">
+      <div class="col-lg-6 right  mt-5 px-5">
+  <div class="desc text-center ">
+    <h1 >
+      طريقك الأسهل لاجتياز الامتحان الوطني الموحد
+    </h1>
+    <p>
+      أصبح بإمكانك الحصول على اسئلة الامتحان الوطني بكل سهولة 
+من مكان واحد فقط “اطلع - اختبر - احصل على النتيجة 
+    </p>
+  </div>
+    <button class="btn main-btn w-100 " routerLink="/selection">ابدأ الآن</button>
+  </div>
+  <div class="col-lg-6  mt-5">
+  
+<app-carousel></app-carousel>    
+  </div>
+  </div>
+
+
+  <div class="specialize row">
+    <h2 class="text-center">
+        الاختصاصات
+    </h2>
+    <div class="conten">
+        <div  *ngFor="let i of spec" (click)="specClick()">
+            <img [src]="i.logo" alt="">
+            <p  class="text-center pb-2" [ngClass]="{ 'selected': (i.id==id)}">{{i.name}}</p>
+        </div>
+    </div>
+    <div class="buttons" [ngClass]="{ 'show': clicked }">
+        <button class="btn btn1" routerLink="/selection">ماستر</button>
+        <button class="btn btn2" routerLink="/selection">تخرج</button>
+
+    </div>
+</div>
+<div class="row phone w-100 px-5 ">
+  <div class="div-right pe-lg-5 ">
+      <div class="img-right">
+          <img src="../../../assets/img/photo_2023-08-14_13-39-10.png" alt="">
+      </div>
+  </div>
+  <div class="div-left ps-lg-5 ">
+      <p>
+          يمكنك تنزيل التطبيق و استخدامه أينما كنت متوفر على أجهزة الأندرويد و الايفون
+      </p>
+      <div class="image-div">
+          <img src="../../../assets/img/pngwing.com (1).png" alt="">
+
+          <img src="../../../assets/img/pngwing.com.png" alt="">
+
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+<app-footer></app-footer>

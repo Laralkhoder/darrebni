@@ -1,0 +1,102 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+
+}
+
+.parent .con {
+  border: 2px solid #6F2877;
+  box-shadow: #6F2877;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.quest p {
+  /* display: inline-block; */
+  margin: 0;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quest{
+min-width: 300px;
+max-width: 500px;
+
+  /* height: 200px; */
+}
+.quest .div1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0.5px solid black;
+  margin-top: 8px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 3px;
+}
+
+.question {
+  font-weight: 500;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+h3 {
+  font-weight: 700;
+  color: #6F2877;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.butt {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+button {
+  border: 1px solid #6F2877;
+  background-color: white;
+  padding: 3px 5px;
+  color: black;
+  border-radius: 6px;
+}
+.con {
+  display: none;
+
+}
+
+.con.active {
+  display: block;
+}
+button[disabled]{
+  background-color: rgba(128, 128, 128, 0.445);
+}
+.false.clicked{
+  color: red;
+  border:0.5px solid red !important;
+
+}
+.true.clicked{
+  border:0.5px solid green !important;
+  color: green;
+}

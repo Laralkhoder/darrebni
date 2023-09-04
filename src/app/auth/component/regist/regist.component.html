@@ -1,0 +1,68 @@
+<div class="container-all">
+  <div class=" parent">
+
+    <div class="regist-con">
+
+      <div class="formm">
+        <div class="con-form">
+          <h1>إنشاء حساب</h1>
+
+          <form [formGroup]="rigesterForm" (submit)="RegisterUser()">
+            <div class="inp1">
+              <label for="">
+                اسم المستخدم
+              </label>
+
+
+              <input type="text" placeholder="اسم المستخدم " formControlName="userName">
+
+              <div style="margin-bottom: 10px;"> 
+                <small
+                  *ngIf="rigesterForm.get('userName').errors?.['required'] && rigesterForm.get('userName').touched">الاسم
+                  مطلوب</small>
+              </div>
+            </div>
+            <div class="inp2">
+              <label for="">
+                رقم الموبايل
+              </label>
+              <input type="text" placeholder="  رقم الموبايل" formControlName="phone">
+            </div>
+            <div style="margin-bottom: 10px;">
+              <small *ngIf="rigesterForm.get('phone').errors?.['required'] && rigesterForm.get('phone').touched">الرقم
+                مطلوب</small>
+                <small class="error" *ngIf="rigesterForm.get('phone').errors?.['pattern'] && rigesterForm.get('phone').touched">
+              الرجاء إدخال رقم هاتف صحيح
+                </small>
+            </div>
+
+            <label for="" class="choose">اختر الاختصاص</label>
+            <div class="radio">
+          
+              <div class="choose1">
+                <div class="rad " *ngFor="let sp of spec">
+                  <input type="radio" value="{{sp.id}}" name="spec" formControlName="spec">
+                  <label for="">{{sp.college_name}} </label>
+                </div>
+              
+              </div>
+              <input class="sub" type="submit" value="إنشاء حساب">
+            </div>
+
+          </form>
+          <div class="fot text-center">
+            <h5> لديك حساب؟ <a href="" routerLink="/auth/login">سجل الدخول</a></h5>
+            <a class="underlined" href="" routerLink="/home">المتابعة كزائر</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="img-container">
+      <div class="con">
+        <img src="../../../../assets/svg/ill_signup.svg" alt="">
+      </div>
+    </div>
+
+
+  </div>
+</div>

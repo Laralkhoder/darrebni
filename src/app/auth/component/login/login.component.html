@@ -1,0 +1,37 @@
+<div class="parent">
+
+  <div class="login-div">
+      <div class="form-log">
+          <form action="" [formGroup]="loginForm" (submit)="loginUser()">
+              <h1>تسجيل الدخول</h1>
+              <div class="inp1">
+                  <label for="">
+                      اسم المستخدم
+                  </label>
+
+
+                  <input type="text" placeholder="اسم المستخدم " formControlName="userName">
+
+
+              </div>
+              <div class="inp2">
+                  <label for="">
+                    رمز الدخول
+                  </label>
+                  <input type="text" placeholder="رمز الدخول" formControlName="code">
+              </div>
+              <input class="sub" type="submit" value=" تسجيل الدخول" >
+
+              <div class="fot">
+                  <h5> ليس لديك حساب؟ <a href="" routerLink="/auth/regist">أنشأ حساب</a></h5>
+              </div>
+          </form>
+      </div>
+  </div>
+
+  <div class="img-container">
+      <div class="con">
+          <img src="../../../../assets/svg/ill_login.svg" alt="">
+      </div>
+  </div>
+</div>

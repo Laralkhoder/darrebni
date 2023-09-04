@@ -1,0 +1,199 @@
+.parent {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.con {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-pro {
+    background-color: white;
+    /* height: 70%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 70%; */
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed #6f2877;
+    padding: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.profile-div {
+    width: 50%;
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+.inp1 input {
+    display: block;
+    width: 340px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #20c3f44d;
+    border-radius: 6px;
+    border: 0;
+    color: black;
+    padding-right: 35px;
+
+
+
+}
+
+.inp2 input {
+    display: block;
+    width: 340px;
+    height: 50px;
+    margin-top: 15px;
+    background-color: #20c3f44d;
+    border-radius: 6px;
+    border: 0;
+    padding-right: 30px;
+
+
+
+}
+.inp1 input:focus ,.inp2 input:focus {
+  outline: none;
+  border: 1px solid #20c3f4ad;
+}
+
+.sub {
+    width: 340px;
+    height: 50px;
+    background-color: #6f2877;
+    border-radius: 6px;
+    border: 0;
+    color: white;
+    margin-top: 20px;
+
+
+}
+
+h4 {
+    text-align: center;
+    margin-top: 20px;
+    color: #745977;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: underline;
+    color: #6f2877;
+    font-weight: 600;
+
+}
+
+input#myinput {
+    background-image: url("../../../assets/img/pngwing.com3.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    text-indent: 10px;
+    background-position: 302px 9px;
+
+
+
+}
+
+input#myinput2 {
+    background-image: url("../../../assets/svg/ic_user.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    text-indent: 10px;
+    background-position: 307px 12px;
+
+
+
+}
+
+#myinput::-webkit-input-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    /* adjust icon position */
+    left: 0px;
+    width: 14px;
+    /* size of a single icon */
+    height: 14px;
+    /* background-image: url("../../../assets/svg/download.png"); */
+    /* all icons in a single file */
+    background-repeat: no-repeat;
+    background-position: -48px 0px;
+    /* position of the right icon */
+}
+
+.icon {
+    position: relative;
+}
+
+.f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--purple1);
+    border-radius: 50%;
+    /* cursor: pointer; */
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 10px;
+}
+
+.h {
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.upload-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.plus-sign {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}

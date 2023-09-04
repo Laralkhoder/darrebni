@@ -1,0 +1,11 @@
+.inner-container{
+  margin: auto;
+  width: 80%;
+  height: 50px;
+  background-color: #DCC4DE;
+border-radius:3px ;
+
+}
+.inner-container:nth-child(even) {
+  background-color: #B9E5FB;
+}

@@ -1,0 +1,53 @@
+<div class="parent">
+
+    <div class="con">
+        <div class="profile-div">
+            <div class="form-pro">
+
+
+                <h1>تعديل المعلومات الشخصية</h1>
+
+
+                <div class="icon">
+                    <!-- <div class="f">
+                        <input type="file" id="o" hidden />
+                        <label for="o" class="h">+</label>
+                    </div> -->
+                    <div class="image-container">
+                        <img [src]="imageUrl" class="profile-image">
+                        <div class="upload-button">
+                            <label for="file-input">
+                                <span class="plus-sign">+</span>
+                            </label>
+                            <input type="file" id="file-input" (change)="onFileSelected($event)">
+                        </div>
+                    </div>
+
+                    <!-- <img src="../../../assets/User.svg" alt=""> -->
+                    <p class="text-center mt-2">صورة الملف الشخصي</p>
+                </div>
+                <form [formGroup]="profileForm">
+
+                    <div class="inp1">
+                        <label for="">
+                            اسم المستخدم
+                        </label>
+
+
+                        <input type="text" placeholder="اسم المستخدم " formControlName="newUserName" id="myinput2">
+
+
+                    </div>
+                    <div class="inp2">
+                        <label for="">
+                            رقم الموبايل
+                        </label>
+                        <input type="text" placeholder="  رقم الموبايل" id="myinput" formControlName="newPhone">
+                    </div>
+                    <input class="sub" type="submit" value="  حفظ التغييرات" (click)="profile()">
+                    <h4><a>إلغاء</a></h4>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="parent">
+  <div class="con" *ngFor="let item of questions ;  let i = index" [class.active]="i === currentSlideIndex">
+      <h3>السؤال({{i+1}})</h3>
+      <p class="question">{{item.content}}</p>
+      <div class="quest">
+          <form >
+            <div class="div1" *ngFor="let choice of item.choices"  [ngClass]="{'true': choice.status, 'false': !correct[i] ,'clicked': trueisClicked[i]}" >
+              <input [disabled]="trueisClicked[i]"   type="radio"  name="rad" value="{{choice.id}}"  [(ngModel)]="rad"  >
+              <p>{{choice.content}}</p>
+            </div>
+              
+          </form>
+      </div>
+      <div class="footer">
+          <div class="right">
+              <img src="../../../assets/svg/ic_answer_correct.svg" alt="" class="correct" (click)="radioDisable(i)">
+              <img src="../../../assets/svg/ic_star_empty.svg" alt="">
+              <img src="../../../assets/svg/ic_reference.svg" alt="">
+          </div>
+          <div class="butt">
+              <button [disabled]="this.currentSlideIndex <= 0" (click)="prevSlide()">السابق</button>
+              <button [disabled]="this.currentSlideIndex >= this.questions.length - 1" class="btn2 me-2"
+                  (click)="nextSlide(item.id,i)">التالي</button>
+
+          </div>
+      </div>
+  </div>
+</div>

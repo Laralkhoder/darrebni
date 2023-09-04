@@ -1,0 +1,82 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  padding-bottom: 100px;
+  flex-direction: column;
+  margin-bottom: 500px;
+
+
+
+}
+
+
+.direction {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  
+  flex-direction: column;
+}
+
+.choose p {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.choose {
+  margin-top: 30px;
+}
+ h1{
+  font-size: 30px;
+}
+
+
+.imp h1 {
+  text-align: center;
+
+}
+
+/* .choose {
+  width: 80%;
+} */
+
+.imp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  background-color: #6f2877;
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  margin-top: 20px;
+
+}
+.questions{
+  display: none;
+}
+.questions.show{
+  display: block;
+}
+img {
+  width: 15px;
+  margin-left: 5px;
+}
+
+ul{
+  padding-right: 20px;
+}
+
+ul li {
+  width: 100%;
+  color: #B989BD;
+}

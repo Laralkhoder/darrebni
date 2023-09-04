@@ -1,0 +1,33 @@
+
+.main-content{
+  width: 300px;
+  margin: 30px auto;
+}
+.content{
+
+  border-bottom: 1px solid #a8a8a8;
+}
+.content h1{
+  font-weight: 500;
+}
+.content h1 img{
+  float: left;
+}
+.result{
+  margin: 20px 0;
+}
+.result p{
+  font-size: 12px;
+}
+button{
+  margin-top: 15px;
+  border-radius: 3px;
+  border: 0;
+  padding: 10px 20px;
+  background-color: #6f2877;
+  color: white;
+  font-weight: 500;
+}
+button:hover{
+  background-color: #67266e;
+}

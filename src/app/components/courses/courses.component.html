@@ -1,0 +1,19 @@
+
+<app-nav></app-nav>
+
+<div class="container mt-5">
+  <div class="back">
+  <app-back></app-back>
+  <div class="main-content mt-5">
+  <div class="inner-container mb-5 d-flex align-items-center justify-content-between px-3" *ngFor="let course of courses">
+<div class="right-side">
+  <img src="../../../assets/svg/ic_book.svg" alt="">
+    {{course.term_name}}
+</div>
+<div class="arrow" routerLink="/questions">
+  <img src="../../../assets/svg/ic_arrow.svg" alt="">
+</div>
+  </div>
+  </div>
+
+</div>

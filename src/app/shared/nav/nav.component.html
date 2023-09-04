@@ -1,0 +1,41 @@
+
+
+<header>
+<img src="../../../assets/img/wave1.jpg" class=" nav-background" alt="">
+<nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="#">
+    <img class="logo" src="../../../assets/img/Logo & Profile.png" alt="">
+  </a>
+
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse justify-content-between px-5" [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav mr-auto w-75">
+      <li class="nav-item" routerLink="/home">
+        <a class="nav-link first" href="#">الرئيسية</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" *ngIf="isUser" routerLink="/selection">الاختصاصات</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">من نحن</a>
+      </li>
+      <li class="nav-item">
+        
+      </li>
+    </ul>
+    <div class="nav-item ">
+      <button *ngIf="!isUser;else loggedIn" class="btn btn1" routerLink="/regist">تسجيل الدخول</button>
+      <ng-template #loggedIn>
+        <button class="btn btn-2" routerLink="/profile">
+          <img src="../../../assets/svg/ic_user.svg" alt="">
+          الملف الشخصي
+        </button>
+      </ng-template>
+    </div>
+  </div>
+</nav></header>

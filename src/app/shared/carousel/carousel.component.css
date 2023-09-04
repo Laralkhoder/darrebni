@@ -1,0 +1,46 @@
+
+.slideshow-container {
+  /* position: relative; */
+  max-width: 350px;
+  margin: auto;
+}
+
+.image {
+
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* The dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #fff;
+  border: 2px solid #6f2877;
+  border-radius: 3px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #6f2877;
+}
+
+/* animation */
+.animation-slides {
+  position: relative;
+  animation-name: animationSlides;
+  animation-duration: 1.5s;
+}
+
+@keyframes animationSlides {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}

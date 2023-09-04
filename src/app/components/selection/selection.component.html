@@ -1,0 +1,29 @@
+<app-nav></app-nav>
+<div class="container">
+  <div class="mt-5 "><app-back></app-back></div>
+
+  <section class="container d-flex flex-column align-items-center justify-content-center">
+    <div class="car-container d-flex justify-content-center mt-5">
+      <div class="car ">
+        <app-carousel></app-carousel>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class=" btn1" routerLink="/courses">الدورات</button>
+      <button class=" btn2" routerLink="/directions">بنك الأسئلة</button>
+    </div>
+    <div class="categories">
+      <h1 class="mb-5">التصنيفات</h1>
+    <div class="content">
+      
+      <div *ngFor="let i of speci">
+          <button class="text-center" (click)="[openDialog(),SubjectId(i.id)]" > {{i.subject_name}}</button>
+      </div>
+  </div>
+    </div>
+    
+  </section>
+</div>
+
+
+<app-footer></app-footer>

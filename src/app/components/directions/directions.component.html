@@ -1,0 +1,32 @@
+
+<app-nav></app-nav>
+<div class="parent ">
+
+  <div class="container">
+
+<app-back></app-back>
+      <div class="direction">
+          <div class="choose">
+              <h1>اختبار الشبكات</h1>
+              <p>50 سؤال</p>
+              <span>علامة النجاح 100</span>
+          </div>
+          <div class="imp">
+              <h1>تعليمات هامة</h1>
+              <ul>
+                  <li>ابدأ الاختبار سوف ينقلك إلى صفحة السؤال</li>
+                  <li>لتحقق من صحة إجابتك اضغط على اشارة الصح اسفل السؤال سوف تظهر لك الاجابة صحيحة او خاطئة</li>
+                  <li>إشاؤة الكتاب سوف تظهر لك مرجع السؤال</li>
+                  <li>كما يمكنك الحصول على النتيجة في اخر الاختبار ........ بالتوفيق</li>
+              </ul>
+              <button (click)="show()">إبدأ الاختبار</button>
+          </div>
+      </div>
+  </div>
+<div class="questions text-center px-5 py-3 w-100" [ngClass]="{ 'show': clicked }">
+    <app-question></app-question> 
+     <button routerLink="/result">أنهِ الاختبار</button>
+  </div>
+
+
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="slideshow-container">
+    <div class="my-slides animation-slides" *ngFor="let slide of slides; let i = index" [hidden]="activeSlide !== i">
+      <img class="image" [src]="slide.image_url">
+    </div>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" *ngFor="let slide of slides; let i = index" [class.active]="activeSlide === i"
+      (click)="showSlide(i)"></span>
+  </div>
+</div>

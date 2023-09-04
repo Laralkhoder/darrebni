@@ -1,0 +1,14 @@
+.buttons button{
+  color: white;
+  padding: 15px 35px;
+  border: 0;
+  border-radius: 4px;
+}
+.btn1 {
+  background-color: #6f2877;
+  
+}
+
+.btn2 {
+  background-color: #20C4F4;
+}
